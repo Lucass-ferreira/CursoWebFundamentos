@@ -14,81 +14,79 @@ body{
     height: 100vh;
     display: flex;
 
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.hero-flex {
-    margin-bottom: 20px;
+.main-flex h1 {
+    margin: 20px 0;
 }
 
 .section-flex {
-    height: 400px;
-    width: 90%;
-    max-width: 500px;
-    max-height: 400px;
-    box-shadow: 0px 2px 6px hsla(0, 0%, 0%, .5);
-    border-radius: 5px;
-    overflow-y: scroll;
+    width: 80%;
+    max-width: 900px;
+}
 
-
+.lista {
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
-    background-color: white;
+
+    gap: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
 }
 
 .items-flex {
+    background-color: #fff;
     display: flex;
+    flex-direction: column;
 
-    flex-direction: row;
-    border-bottom: 2px solid #eee;
+    width: 250px;
+    height: 290px;
+    position: relative;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
 }
 
-.items-flex .items-flex__img img{
-    height: 80px;
+.thumble-flex  {
+    background-image: url(../imagens/thumb02.jpg);
+    height: 47%;
+    border-radius: 7px 7px 0 0;
+}
+
+.items-flex .items-flex__img {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    z-index: 1;
+}
+
+.items-flex__img img {
+    height: 70px;
     border-radius: 50%;
-    padding: 10px;
 }
 
-.items-flex .items-flex__content p {
-    margin: 10px 0 0 0;
-    padding: 0 5px;
-}
-
-.items-flex .items-flex__content {
-    flex-grow: 1;
-}
-
-.items-flex p.nome {
-    text-transform: capitalize;
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-.items-flex p.email {
-    color: #979797;
-    margin-top: 3px;
-}
-
-.items-flex .items-flex__action {
-    visibility: hidden;
+.items-flex__content {
     display: flex;
-    
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items:center;
 }
 
-.items-flex:hover {
+.items-flex__content .nome {
+    font-size: 26px;
+}
+
+.items-flex__action {
+    display: flex;
     background-color: #ccc;
-}
 
-.items-flex:hover .items-flex__action {
-    visibility: visible;
-}
-
-.material-symbols-outlined {
-    margin-right: 15px;
-    color: #7e7e7e;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 10px;
 }
