@@ -1,42 +1,36 @@
 @charset "UTF-8"; 
 
- * {
+* {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
  }
 
-body {
+body{
     background-color: rgb(49, 255, 255);
 }
 
-img {
-    height: 60px;
-    border-radius: 50%;
-    padding: 10px 10px 10px 10px;
-}
-
-main {
-    display: flex;
-    /* border: 2px solid; */
-}
-
 .main-flex {
+    height: 100vh;
+    display: flex;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.main-flex header {
-    margin-top: 60px;
-}
-
-section {
-    height: 300px;
+.hero-flex {
+    margin-bottom: 20px;
 }
 
 .section-flex {
-    /* border: 2px solid; */
-    box-shadow: -2px 2px 2px hsla(0, 0%, 0%, 0.276);
-    overflow: auto;
+    height: 400px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    box-shadow: 0px 2px 6px hsla(0, 0%, 0%, .5);
+    border-radius: 5px;
+    overflow-y: scroll;
 
 
     display: flex;
@@ -44,34 +38,40 @@ section {
     background-color: white;
 }
 
-.aside-flex {
+.items-flex {
     display: flex;
 
     flex-direction: row;
     border-bottom: 2px solid #eee;
 }
 
-.aside-flex .div2 p {
+.items-flex .items-flex__img img{
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.items-flex .items-flex__content p {
     margin: 10px 0 0 0;
     padding: 0 5px;
 }
 
-.aside-flex .div2 {
+.items-flex .items-flex__content {
     flex-grow: 1;
 }
 
-.aside-flex p.nome {
+.items-flex p.nome {
     text-transform: capitalize;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-.aside-flex p.email {
+.items-flex p.email {
     color: #979797;
     margin-top: 3px;
 }
 
-.aside-flex .icons {
+.items-flex .items-flex__action {
     visibility: hidden;
     display: flex;
     
@@ -80,14 +80,15 @@ section {
     align-items: center;
 }
 
-.aside-flex:hover {
+.items-flex:hover {
     background-color: #ccc;
-    .icons {
-        visibility: visible;
-    }
 }
 
-span {
+.items-flex:hover .items-flex__action {
+    visibility: visible;
+}
+
+.material-symbols-outlined {
     margin-right: 15px;
     color: #7e7e7e;
 }
