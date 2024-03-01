@@ -108,6 +108,11 @@ body {
 
 .cards-flex-div__list li {
     padding-bottom: 10px;
+    color: #CBE200;
+}
+
+.cards-flex-div__list li span {
+    color: white;
 }
 
 .cards-flex-div__link{
