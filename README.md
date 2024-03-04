@@ -9,3 +9,5 @@ Mini Projeto: [Projeto currículo](https://lucass-ferreira.github.io/html-css_2/
 Projeto Ser-frontend: [Site Ser-frontend](https://lucass-ferreira.github.io/html-css_2/desafios/d003/index.html)
 
 Projeto Lista de Contatos: [Lista de Contatos](https://lucass-ferreira.github.io/html-css_2/desafios/d004/index.html)
+
+Projeto Lista de Contatos 2: [Lista de Contatos 2](https://lucass-ferreira.github.io/html-css_2/desafios/d005/index.html)
