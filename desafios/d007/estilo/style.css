@@ -51,19 +51,19 @@ body {
   
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    width: 860px;
+    margin: auto;
     gap: 14px;
 }
 
-.cards__img {
-    height: 169px;
-    width: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.cards__items {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
 
-
+.cards__img img {
+    width: 100%;
+    display: block;
 }
 
 .cards__text {
