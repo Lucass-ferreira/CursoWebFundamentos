@@ -67,7 +67,7 @@ html{
 }
 
 .main-flex {
-    font-family: var(--roboto);
+    font-family: var(--roboto), sans-serif;
     width: 90%;
     margin: auto;
     max-width: 96em;
@@ -79,7 +79,7 @@ html{
 .section__sub-title {
     font-size: 2.7em;
     padding: 1em;
-    font-family: var(--Italiana);
+    font-family: var(--Italiana), sans-serif;
 }
 
 .section__content {
@@ -130,7 +130,7 @@ html{
 .aside__sub-title {
     font-size: 4em;
     margin: 1em 0 .5em;
-    font-family: var(--Viaoda_Libre);
+    font-family: var(--Viaoda_Libre), serif;
     color: white;
     font-weight: normal;
     text-transform: uppercase;
@@ -150,7 +150,7 @@ html{
     padding: 1em;
     font-size: 1.6em;
     text-align: center;
-    font-family: var(--roboto);
+    font-family: var(--roboto), sans-serif;
     font-weight: 800;
     letter-spacing: .1em;
 }
