@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="hero-content">
-        <p class="hero__logo"><img src="imagens/logoAprenser.png" alt="Logo Aprenser"></p>
+        <p class="hero__logo"><a href="#"><img src="imagens/logoAprenser.png" alt="Logo Aprenser"></a></p>
         <nav class="hero__nav">
             <ul>
                 <li><a href="#cursos">Cursos</a></li>
@@ -21,31 +21,31 @@
     <main class="main-content">
         <section class="section-content-01">
             <div class="section-01__div">
-                <p class="section-01__text">O saber é o que transforma nosso SER</p>
+                <p class="section-01__text">O saber é o que transforma nosso <span>ser</span></p>
                 <p class="section-01__btn"><a href="#">Saiba Mais</a></p>
             </div>
 
-            <img src="imagens/HeroImage.png" alt="imagem de mulher cheirando flor">
+            <img src="imagens/HeroImage.png" alt="mulher cheirando flor">
         </section>
 
-        <section id="cursos" class="section-content-02">
+        <section class="section-content-02 section_padded" id="cursos">
             <h2 class="section-02__subtitle">Principais Cursos</h2>
 
             <article class="section-02__cards">
                 <div class="article__items">
-                    <img src="imagens/curso-design.png" alt="imagem de curso de design">
+                    <img src="imagens/curso-design.png" alt="imagem ilustrativa de curso de design">
                     <h3>Design para webG</h3>
                     <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
                 </div>
 
                 <div class="article__items">
-                    <img src="imagens/curso-design-2.png" alt="imagem de curso de HTML e CSS">
+                    <img src="imagens/curso-design-2.png" alt="imagem ilustrativa de curso sobre front-end">
                     <h3>Front End Developer</h3>
                     <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
                 </div>
 
                 <div class="article__items">
-                    <img src="imagens/curso-design-1.png" alt="imagem de curso de Javascript">
+                    <img src="imagens/curso-design-1.png" alt="imagem ilustrativa de curso sobre back-end">
                     <h3>Back End Developer</h3>
                     <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
                 </div>
@@ -54,7 +54,7 @@
             <p class="section-02__btn"><a href="#">Ver mais cursos</a></p>
         </section>
 
-        <section id="escola" class="section-03-content">
+        <section class="section-03-content section_padded" id="escola">
 
             <img src="imagens/nossa-escola.png" alt="imagem de mulher morena estudando">
 
@@ -68,15 +68,17 @@
             </div>
         </section>
 
-        <section id="contatos" class="section-04-content">
+        <section class="section-04-content section_padded" id="contatos">
             <h3 class="section-04-subtitle">Contatos</h3>
 
             <article class="section-04__article">
                 <img src="imagens/map.png" alt="imagem de um mapa">
 
-                <p>Av. da Liberdade, 1001</p>
-                <p>Tel.: +351 21 123 456</p>
-                <p>E-mail: contato@aprenser.com</p>
+                <address class="address_contatos">
+                    Av. da Liberdade, 1001 <br>
+                    Tel.: +351 21 123 456 <br>
+                    E-mail: contato@aprenser.com
+                </address>
             </article>
         </section>
     </main>
