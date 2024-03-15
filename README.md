@@ -1,5 +1,5 @@
 # CursoWebFundamentos
- Curso de HTML5, CSS3 e JavaScript do CursoWebFundamentos
+ Curso intermediário de HTML5, CSS3 e Javascript do CursoWebFundamentos
 
 ---
 Meus Projetos
