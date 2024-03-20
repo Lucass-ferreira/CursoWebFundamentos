@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
+    <title>Login</title>
     <link rel="stylesheet" href="estilo/style.css">
-
 </head>
 <body>
     <form class="form__content" action="#" method="post" autocomplete="off">
         <fieldset class="fieldset__content">
-            <legend class="legend__text">Cadastre-se</legend>
+            <legend class="legend__text">Login</legend>
 
             <label class="items__label" for="usuario">Usuário</label>
             <input class="items__input" type="text" id="usuario" required>
-
-
-            <label class="items__label" for="email">E-mail</label>
-            <input class="items__input" type="email" name="email" id="email" required>
 
             <label class="items__label" for="senha">Senha</label>
             <input class="items__input" type="password" name="password" id="senha" required>
 
             <div class="div__content">
-                <strong><input class="div__btn" type="submit" value="Cadastre-se"></strong>
-                <p class="div__text"><strong>Já possui cadastro?</strong><a href="login.html" target="_blank">Faça login</a></p>
+                <strong><input class="div__btn" type="submit" value="Login"></strong>
+                <p class="div__link"><a href="index.html"><strong>Cadastra-se</strong></a></p>
+                <p class="div__text"><a href="#">esqueci minha senha</a></p>
             </div>
         </fieldset>
     </form>

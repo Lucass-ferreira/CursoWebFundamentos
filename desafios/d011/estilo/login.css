@@ -83,15 +83,6 @@ margin-top: .75em;
   font-size: .75em;
   color: rgba(0, 0, 0, 0.75);
 }
-.div__link{
-  margin-right: auto;
-  padding: 0 .75em;
-}
-
-.div__link a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
 
 .div__text a {
   font-weight: 400;
