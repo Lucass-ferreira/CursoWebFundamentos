@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    width: 260px;
+    height: 180px;
+    opacity: .6;
+}
+
+h1 {
+    margin: 5em auto 0;
+    text-align: center;
+}
+
+.div_content {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+
+    border: 2px solid;
+    width: 90%;
+
+    max-width: 1200px;
+    padding: 16px;
+    margin: 2em auto;
+}
+
+.div__items {
+    background-image: url("https://picsum.photos/200/300?random=1");
+    width: 260px;
+    opacity: .7;
+}
+
+.div__items p {
+    margin-top: 180px;
+    color: white;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+
+.div__items:hover {
+    opacity: 1;
+}
