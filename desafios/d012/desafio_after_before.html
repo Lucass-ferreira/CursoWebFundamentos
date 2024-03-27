@@ -8,10 +8,12 @@
     <style>
         a:nth-of-type(1)::after {
             content: url(imagens/newWindow-icon.png);
+            margin-left: .5em;
         }
 
         a:nth-of-type(2)::before {
             content: url(imagens/pdf-icon.gif);
+            margin-right: .5em;
         }
 
         label[for="chk1"] {
@@ -22,11 +24,11 @@
             color: green;
         }
 
-        label[for="chk2"] {
+        input[name="chk2"]:disabled + label {
             color: blue;
         }
 
-        ul > li:nth-child(3) {
+        li li:nth-child(3) {
             background-color: red;
         }
     </style>
