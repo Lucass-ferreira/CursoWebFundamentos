@@ -1,62 +1,89 @@
 @charset "utf-8";
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ccc;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
+    background-color: #ccc;
 }
 
 img {
+    max-width: 100%;
     display: block;
-    width: 260px;
-    height: 180px;
-    opacity: .6;
 }
 
-h1 {
-    margin: 5em auto 0;
-    text-align: center;
-}
-
-.div_content {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+.gallery {
+    width: 60rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 10px;
-    
-
-    border: 2px solid;
-    width: 90%;
-
-    max-width: 1200px;
-    padding: 16px;
-    margin: 2em auto;
-}
-
-.div__items {
-    background-image: url("https://picsum.photos/200/300?random=1");
-    width: 260px;
-    opacity: .7;
-}
-
-.div__items p {
-    margin-top: 180px;
-    color: white;
+    justify-content: space-between;
+    gap: .5em;
+    background-color: white;
     padding: 1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
 }
 
-.div__items:hover {
+.gallery .image {
+    flex-basis: calc(25% - .5em);
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.image a {
+    text-decoration: none;
+    
+}
+
+.gallery p {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-size: .75em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+    transform: translateY(100%);
+    transition: all .2s ease-in-out;
+}
+
+.image:hover p {
+    transform: translateY(0);
     opacity: 1;
+}
+
+.image img {
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.2);
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    inset: 0;
+    opacity: .5;
+    pointer-events: none;
+    transition: opacity .5s ease-in-out;
+}
+
+.image:hover::after {
+    opacity: 0;
 }
