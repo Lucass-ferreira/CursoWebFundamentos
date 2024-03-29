@@ -18,3 +18,4 @@ Projeto Aprenser: [Projeto Aprenser](https://lucass-ferreira.github.io/html-css_
 
 Projeto Login: [Projeto Login](https://lucass-ferreira.github.io/html-css_2/desafios/d011/login.html)
 
+Projeto Gallery: [Projeto Gallery](https://lucass-ferreira.github.io/html-css_2/desafios/d013/gallery.html)
