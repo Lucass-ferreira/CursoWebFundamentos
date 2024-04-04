@@ -99,7 +99,8 @@ kbd {
     background-color: transparent;
 }
 
-.topicos ul a:hover {
+.topicos ul a:hover,
+.topicos ul a:focus {
     background-color: var(--secondary-color-light);
     padding-right: 1rem;
 }
@@ -120,6 +121,25 @@ kbd {
     font-size: 1.1em;
     padding-left: 2em;
     margin-bottom: 2.2em;
+}
+
+.card {
+    max-width: 740px;
+    background-color: var(--secondary-color);
+    padding: 0;
+}
+
+.card_content {
+    padding: .5em 1em 1em;
+}
+
+.card_content p,
+.card_title {
+    margin: 0;
+}
+
+.card_title {
+    font-size: 1.75em;
 }
 
 
