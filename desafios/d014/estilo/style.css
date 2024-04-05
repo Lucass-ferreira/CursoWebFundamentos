@@ -41,8 +41,8 @@ h2 {
     margin-top: 1rem;
 }
 
-article {
-    padding: 1em 0;
+section {
+    margin-bottom: 3rem;
 }
 
 kbd {
@@ -140,6 +140,17 @@ kbd {
 
 .card_title {
     font-size: 1.75em;
+    margin-bottom: .25em;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 3em;
+    padding-top: 1.5rem;
 }
 
 
