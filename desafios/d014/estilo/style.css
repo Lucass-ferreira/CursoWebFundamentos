@@ -4,6 +4,9 @@
     --primary-color: #ff7833;
     --secondary-color: #31333b;
     --secondary-color-light: #444856;
+    --secondary-color-drak: #23252d;
+
+    --default-gap: 3rem;
    
 }
 
@@ -59,7 +62,31 @@ kbd {
     line-height: 1;
     padding: 2px 4px;
     white-space: nowrap;
-  }
+}
+
+input,
+label,
+textarea,
+select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input,
+textarea,
+select {
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    border: none;
+}
 
 .underline {
     text-decoration: red wavy underline;
@@ -149,10 +176,112 @@ kbd {
 
 .row {
     display: flex;
-    gap: 3em;
+    gap: var(--default-gap);
     padding-top: 1.5rem;
+    justify-content: space-between;
 }
 
+.row > * {
+    flex: 1 0 0%;
+}
 
+.row .row {
+    padding-top: 0;
+}
 
+.alternate {
+    list-style-type: none;
+    padding-left: 0;
+}
 
+.alternate li{
+    padding: 0;
+}
+
+.alternate li:not(:last-child) {
+    border-bottom: 2px solid;
+    padding: 0;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+.list-emoji {
+    list-style-type: "\1F642";
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-drak);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .8em 1.2em;
+    border-radius: 5px;
+}
+
+.btn + .btn {
+    margin-left: 2rem;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--secondary-color-drak);
+}
+
+.btn-stroke {
+    background-color: transparent;
+}
+
+.btn-big {
+    font-size: 1.6rem;
+}
+
+.btn-full {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-full + .btn-full {
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+.form-quiz {
+    width: calc( 50% - (var(--default-gap) / 2) );
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td:last-child,
+.table th:last-child{
+    text-align: right;
+}
+
+.table td,
+.table th{
+    padding: 1.6rem;
+}
+
+.table:not(.table-zebrada) td {
+    border-bottom: 2px solid var(--secondary-color-drak);
+}
+
+.table th {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.table-zebrada tbody tr:nth-child(odd){
+    background: var(--secondary-color);
+}
+
+.table-vertical td:not(:last-child),
+.table-vertical th:not(:last-child) {
+    border-right: 1px solid var(--secondary-color-drak);
+}
