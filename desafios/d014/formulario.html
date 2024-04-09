@@ -27,14 +27,68 @@
     <main class="conteudo">
         <h1 class="conteudo_titulo">My Components</h1>
 
-        <article class="conteudo_texto article_destaque">
-            <h2>Formulario</h2>
-            <p>Os formulários estão presentes no nosso dia-dia em basicamente tudo que fazemos, ao entrarmos em um site que exige que façamos um login.</p>
-        </article>
+        <section>
+            <h2>Entre em contato</h2>
 
-        <article>
+            <div class="row">
+                
+                <form action="" method="post">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="nome completo">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <label for="msg">Digite sua mensagem</label>
+                    <textarea name="msg" id="msg" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+
+                <address>
+                    <p><strong>Endereço</strong> 1234 Somewhere Rd.Nashville, TN 00000 United States</p>
+                    <p><strong>Telefone</strong> 000-000-000</p>
+                    <p><strong>Email</strong> email@server.com</p>
+                </address>
+
+            </div>
+
             
-        </article>
+        </section>
+
+        <section>
+            <h2>Quiz</h2>
+
+            <form action="" class="form-quiz">
+                <label for="tecnologia">Qual a sua linguagem preferida</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecione</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Javascript</option>
+                </select>
+
+                <label>Baixa Prioridade <input type="radio" name="prioridade" value="baixa"></label>
+
+                <label>Media Prioridade <input type="radio" name="prioridade" value="media"></label>
+
+                <label>Alta Prioridade <input type="radio" name="prioridade" value="alta"></label>
+
+                <label> <input type="checkbox" name="copia" value="true"> Envie-me uma copia</label>
+
+                <label> <input type="checkbox" name="humano" value="true"> Sou um humano</label>
+
+                <div class="row">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" class="btn btn-stroke">
+                </div>
+            </form>
+        </section>
     </main>
 
 </body>
