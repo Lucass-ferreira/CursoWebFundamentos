@@ -15,6 +15,11 @@ html {
 }
 
 body{
+    background-image: url(../imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
     display: flex;
     margin: 0;
     color: #e7e7e7;
@@ -95,8 +100,7 @@ select {
 .perfil {
     flex: 0 0 26rem;
     background-color: var(--secondary-color);
-    /* text-align: right; */
-    /* padding: 2rem; */
+    background-color: rgba(49, 51, 59, .8);
 }
 
 .perfil_img {
@@ -104,6 +108,9 @@ select {
 }
 
 .topicos {
+    position: sticky;
+    top: 0;
+    left: 0;
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
 }
@@ -139,6 +146,7 @@ select {
 
 .conteudo {
     background-color: var(--secondary-color-light);
+    background-color: rgba(68, 72, 86, .6);
     flex: 1 0;
     padding: 6.5rem 6rem 7.5rem;
 }
@@ -284,4 +292,28 @@ select {
 .table-vertical td:not(:last-child),
 .table-vertical th:not(:last-child) {
     border-right: 1px solid var(--secondary-color-drak);
+}
+
+.link-icon{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 2rem;
+
+    display: inline-block;
+    margin-right: 3rem;
+    transition: color .3s;
+}
+
+.link-icon svg {
+    width: 4rem;
+    height: 4rem;
+    fill: currentColor;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+    color: var(--primary-color);
 }
