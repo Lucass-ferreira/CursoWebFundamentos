@@ -14,17 +14,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-    text-align: center;
+img {
+    display: block;
+    margin: auto;
     padding: 1em;
-    font-family: 'icomoon';
-    font-weight: 100;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+}
 
+li a:hover {
+    background-color: rgba(65, 27, 100, 0.668);
 }
 
 li a {
@@ -34,4 +36,32 @@ li a {
     color: white;
     text-decoration: none;
     text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    li a {
+        background-color: transparent;
+        color: rgb(65, 27, 100);
+        display: inline-block;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 994px;
+        margin: auto;
+        text-align: center;
+    }
 }
