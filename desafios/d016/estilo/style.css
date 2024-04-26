@@ -14,6 +14,7 @@ body {
     font-family: sans-serif;
 }
 
+
 .maxWidth {
     max-width: 70.25em;
     margin: auto;
@@ -41,6 +42,29 @@ body {
     text-align: center;
 }
 
+.main-section-01 {
+    text-align: center;
+    margin: 2em;
+    color: var(--primary-color);
+}
+
+.main-content{
+    padding: 1.5em 1.5em 1em;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: rgb(0, 197, 197);
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.icon_play {
+    display: none;
+}
+
 @media screen and (min-width: 52em) {
     .header {
         display: flex;
@@ -64,5 +88,21 @@ body {
 
     .top-header-nav a:hover {
         background-color: color-mix(in srgb, var(--primary-color), white 85%);
+    }
+
+    .main {
+        background-color: var(--primary-color);
+    }
+
+    .main-section-01 {
+        color: white;
+        padding: 1.5em;
+    }
+
+    .icon_play {
+        display: block;
+        margin: auto;
+        width: 100px;
+        margin-bottom: 1em;
     }
 }
