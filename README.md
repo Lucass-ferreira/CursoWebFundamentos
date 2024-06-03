@@ -23,3 +23,5 @@ Projeto Galeria: [Projeto Galeria](https://lucass-ferreira.github.io/html-css_2/
 Projeto Components: [Projeto My Components](https://lucass-ferreira.github.io/html-css_2/desafios/d014/index.html)
 
 Projeto Hotels: [Range Hotels](https://lucass-ferreira.github.io/html-css_2/desafios/d016/range-hotels.html)
+
+Projeto Dashboard: [Range Dashboard](https://lucass-ferreira.github.io/html-css_2/desafios/d017/dashboard.html)
