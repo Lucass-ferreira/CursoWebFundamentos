@@ -8,19 +8,17 @@
 body {
     display: grid;
     grid-template-columns: 18em 1fr;
-    grid-template-rows: 5em 1fr;
+    grid-template-rows: 60px auto;
 
-    min-height: 100vh;
     font-family: "Poppins", sans-serif;
 }
 
 ul {
     list-style-type: none;
-    
 }
+
 img {
     width: 50%;
-    display: block;
 }
 
 /* header-top */
@@ -41,12 +39,19 @@ img {
 .header-top li a {
     text-decoration: none;
     padding: .75em 1em;
+    color: inherit;
+    display: flex;
+    gap: 10px;
 }
 
 /* nav */
 
 .nav {
     grid-row: 1 / -1;
+    grid-column: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .nav .logo {
@@ -55,8 +60,7 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    text-align: center;
-    margin-bottom: 25px;
+    font-size: 1.5rem;
 }
 
 .nav li {
@@ -64,18 +68,24 @@ img {
 }
 
 .nav li a {
-    padding: 1em;
+    /* padding: 1em; */
+    padding-left: 1em;
     font-size: 1.2em;
     text-decoration: none;
     color: inherit;
+
 }
 
-/* .menus {
+.destaque_linha {
+    border-bottom: 2px solid #ccc;
+}
+
+.menus {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     justify-content: space-between;
-} */
+    flex-grow: 1;
+}
 
 .menus a {
     text-decoration: none;
@@ -89,27 +99,42 @@ img {
 }
 
 .main-div {
-    display: grid;
-
-    padding: 1em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 250px 300px;
-    gap: 1em;
+    padding: .75em;
 }
 
-.main-section-content {
+.main-section_content {
     grid-column: span 2;
     background-color: white;
+    padding: 1.25em;
+    margin-bottom: 1em;
 }
 
-.main-section_img {
-    grid-column: span 2;
-    grid-row: 2 / 3;
+.num_span {
+    color: blue;
+    padding-left: .75em;
 }
 
-.main-section_imgs {
-    grid-column: span 2;
+.main-section_content ul{
     display: flex;
-    gap: 1em;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.main-section_content ul li {
+    padding-right: 1em;
+    border-right: 1px solid #999999;
+}
+
+.main-section_content .btn {
+    border-right: none;
+    padding-right: 0;
+}
+
+.main-section_content .btn a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+}
