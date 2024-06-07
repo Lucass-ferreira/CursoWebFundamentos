@@ -46,6 +46,16 @@ img {
     padding-right: 2em;
 }
 
+.header_aside_name{
+    font-weight: 600;
+}
+
+.header_aside_rule{
+    font-weight: 500;
+    color: color-mix(in srgb, black, transparent 60%);
+}
+
+
 /* nav */
 
 .nav {
@@ -53,6 +63,10 @@ img {
     grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+
+    position: sticky;
+    top: 0;
 }
 
 .nav .logo {
@@ -78,6 +92,10 @@ img {
 
 .destaque_linha {
     border-bottom: 2px solid #ccc;
+}
+
+.menus ul li {
+    margin-top: 1rem;
 }
 
 .menus {
@@ -118,55 +136,47 @@ img {
 
 .main-section_content {
     background-color: white;
-    padding: 1.5em;
+    padding: 1em;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     gap: 50px;
+}
+
+.espaco {
+    align-self: stretch;
+    width: 2px;
+    background-color: #ccc;
 }
 
 .main-section_aside:not(.btn) {
     display: flex;
-    justify-content: space-between;
-    flex-basis: 260px;
-    border-right: 1px solid #ccc;
-    padding-right: 2.5em;
-    font-size: 1.2rem;
+    padding: 1em;
 }
 
 .aside_div_num {
     color: blue;
+    padding-left: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .btn {
-    background-color: blue;
-    color: white;
-    text-decoration: none;
-}
-
-.main-section_content ul{
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-section_content ul li {
-    padding-right: 1em;
-    border-right: 1px solid #999999;
-}
-
-.main-section_content .btn {
     border-right: none;
     padding-right: 0;
 }
 
-.main-section_content .btn a {
+.btn{
     background-color: blue;
     color: white;
     text-decoration: none;
     padding: .75em 1.5em;
     border-radius: 5px;
+
+    align-self: stretch;
+    display: flex;
+    align-items: center;
 }
 
 .main-section_img {
