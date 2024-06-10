@@ -147,13 +147,22 @@ img {
 
 @media screen and (min-width: 46.5em) {
     body {
-        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .content-wrapper-center {
+        grid-column: 1 / -1;
     }
 
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .hero_title {
+        font-size: 3.5em;
     }
 
     .header-menu {
@@ -169,5 +178,115 @@ img {
     .content {
         text-align: left;
         
+    }
+
+    .brands ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .branding {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .branding img {
+        grid-column: 1 / 7;
+        grid-row: 1 / -1;
+        width: 100%;
+    }
+
+    .branding article {
+        grid-column: span 6;
+        grid-row: 1 / -1;
+        text-align: left;
+    }
+
+    .results {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .results a {
+        display: none;
+    }
+
+    .results img {
+        grid-column: span 6;
+        grid-row: 1 / -1;
+        width: 100%;
+    }
+
+    .results article {
+        grid-column: span 6;
+        grid-row: 1 / -1;
+        text-align: left;
+    }
+
+    .testemunhos_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .testemunho {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        text-align: left;
+
+    }
+
+    .testemunho img {
+        width: 20%;
+    }
+
+    .contato {
+        text-align: left;
+    }
+
+    .contato_image {
+        display: block;
+        text-align: center;
+    }
+
+    .footer {
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr) 60px;
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+    .footer_serDigital {
+        grid-column: 1 / span 6;
+        grid-row: 1 / 2;
+
+    }
+
+    .footer_company {
+        grid-column: 6 / -1;
+        grid-row: 1 / -1;
+        text-align: right;
+    }
+
+    .footer_company h3 {
+        margin: 0;
+    }
+
+    .footer_contato {
+        grid-column: 1 / span 6;
+        grid-row: 2;
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+        
+        text-align: center;
     }
 }
