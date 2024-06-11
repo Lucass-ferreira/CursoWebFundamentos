@@ -51,6 +51,10 @@ h2 {
     text-align: left;
 }
 
+.menu-hamburguer {
+    display: none;
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -82,6 +86,10 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .hide {
@@ -144,9 +152,19 @@ img {
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+    grid-auto-flow: dense;
+}
 
-@media screen and (min-width: 46.5em) {
-    body {
+.sm-12 {
+    grid-column: 1 / span 12;
+}
+
+@media screen and (min-width: 46.25em) {
+    /* body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
     }
@@ -178,11 +196,6 @@ img {
     .content {
         text-align: left;
         
-    }
-
-    .brands ul {
-        display: flex;
-        justify-content: space-between;
     }
 
     .branding {
@@ -288,5 +301,60 @@ img {
         grid-row: 3 / -1;
         
         text-align: center;
+    } */
+    
+    .row > .md-3 {
+        grid-column: span 3;
     }
+
+    .row > .md-6 {
+        grid-column: span 6;
+    }
+
+    .row > .md-9 {
+        grid-column: span 9;
+    }
+
+    .row > .md-6-12 {
+        grid-column: 7 / 13;
+    }
+
+    .row > .md-1-6 {
+        grid-column: 1 / 7;
+    }
+
+    .hero_content {
+        text-align: left;
+    }
+
+    .contato_image {
+        display: block;
+    }
+
+    .testemunho {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        text-align: left;
+    }
+
+    .testemunho_content {
+        width: calc(100% - 132px)
+    }
+
+    .testemunho_thumb {
+        width: 132px;
+    }
+
+    .contato {
+        padding-bottom: 0;
+    }
+
+    .footer {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 90em) {
+
 }
