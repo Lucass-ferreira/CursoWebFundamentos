@@ -350,7 +350,7 @@ img {
         padding-bottom: 0;
     }
 
-    .footer {
+    .footer section:not(.copyright) {
         text-align: left;
     }
 }
