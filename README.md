@@ -24,4 +24,6 @@ Projeto Components: [Projeto My Components](https://lucass-ferreira.github.io/ht
 
 Projeto Hotels: [Range Hotels](https://lucass-ferreira.github.io/html-css_2/desafios/d016/range-hotels.html)
 
-Projeto Dashboard: [Range Dashboard](https://lucass-ferreira.github.io/html-css_2/desafios/d017/dashboard.html)
+Projeto Dashboard: [Dashboard](https://lucass-ferreira.github.io/html-css_2/desafios/d017/dashboard.html)
+
+Projeto SerDigital: [SerDigital](https://lucass-ferreira.github.io/html-css_2/desafios/d018/SerDigital.html)
