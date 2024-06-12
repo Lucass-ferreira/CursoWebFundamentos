@@ -17,6 +17,7 @@ body {
 
 .content-wrapper-center {
     padding: 1rem;
+    width: calc(100% - 2rem);
 }
 
 .header-menu {
@@ -28,7 +29,14 @@ body {
 .header-menu a {
     display: block;
     padding: 2em 0;
+}
 
+.hero_title {
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -69,11 +77,6 @@ h2 {
     background-color: var(--primary-color-dark);
 }
 
-img {
-    max-width: 100%;
-}
-
-
 .brands h2 {
     font-size: 1rem;
     font-weight: lighter;
@@ -106,6 +109,7 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1rem;
+    margin-bottom: 2em;
 }
 
 .contato {
@@ -142,6 +146,7 @@ img {
 
 .copyright {
     white-space: nowrap;
+    font-size: 12px;
 }
 
 .hero,
@@ -155,7 +160,7 @@ img {
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3rem;
+    /* gap: 3rem; */
     grid-auto-flow: dense;
 }
 
@@ -345,6 +350,10 @@ img {
     .testemunho_thumb {
         width: 132px;
     }
+
+    /* .testemunho_thumb img {
+        width: 100%;
+    } */
 
     .contato {
         padding-bottom: 0;
